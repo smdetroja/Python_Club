@@ -24,13 +24,13 @@ password = "".join(random.sample(string,lenght))
 print("Your new password: ",password)
 
 #giving path to for saving file in computer 
-save_path = 'C:\Password'
+save_path = 'D:\Python self\Programs\Password'
 
 #creating file name and giving path
 complete_Name = os.path.join(save_path, myApp+".txt") 
 
 #Opens or creates the .txt file, sharing the directory of the script#
-text_file = open(completeName, "w")
+text_file = open(complete_Name, "w")
 
 #Writes the variable into the .txt file#
 text_file.write(myApp+"\nPassword: "+password)
